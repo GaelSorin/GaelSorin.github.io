@@ -1,0 +1,115 @@
+.textResume{
+    padding:3%
+}
+
+html{
+    height: 100vh;
+}
+
+.divAnimation1{
+    border-radius: 3px;
+    animation: mymove1 1s;
+    animation-timing-function: ease;
+}
+.divAnimation2{
+    border-radius: 3px;
+    animation: mymove2 2s;
+    animation-timing-function: ease;
+}
+.divAnimation3{
+    border-radius: 3px;
+    animation: mymove3 3s;
+    animation-timing-function: ease;
+}
+.divAnimation4{
+    border-radius: 3px;
+    animation: mymove4 4s;
+    animation-timing-function: ease;
+}
+
+
+@keyframes mymove1 {
+    from {left: -150%;}
+    to {left: 0px;}
+}
+
+@keyframes mymove2 {
+    from {left: -250%;}
+    to {left: 0px;}
+}
+
+@keyframes mymove3 {
+    from {left: -350%;}
+    to {left: 0px;}
+}
+
+@keyframes mymove4 {
+    from {left: -450%;}
+    to {left: 0px;}
+}
+
+.embed{
+    width: 100%;
+    height: 1200px;
+}
+
+.divCV{
+    animation: appear 5s;
+}
+
+.divContact{
+    animation: appear 6s;
+}
+
+@keyframes appear {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+.animNom{
+    animation : appearName 1s;
+}
+
+.animTitre{
+    animation: appearName 2s;
+}
+
+@keyframes appearName {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.sticky {
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 10000;
+}
+
+.checked{
+    color: orange;
+}
+
+.tablePadding{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.titlePadding{
+    padding-top: 40px;
+    padding-bottom: 36px;
+}
+
+.imgBorder{
+    max-height: 150px;;
+    border-radius: 5px;
+}
+
+.imgFlag{
+    max-height: 25px;
+}
+

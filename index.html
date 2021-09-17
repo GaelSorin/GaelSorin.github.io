@@ -1,1 +1,501 @@
-Hello World
+<!DOCTYPE html>
+<html lang="fr" class="grey darken-3">
+    <head>
+        <title>Portfolio Gaël Sorin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+          var global = {
+          konami: function() {
+            var konamikeys = [38,38,40,40,37,39,37,39,66,65], 
+                started = false, 
+                count = 0;
+            $(document).keydown(function(e){
+              var reset = function() {
+                started = false; 
+                count = 0;
+                return;
+              };
+              key = e.keyCode;
+              if(!started){
+                if(key == 38){
+                  started = true;
+                }
+              }
+              if (started){
+                if (konamikeys[count] == key){
+                  count++;
+                } else {
+                  reset();
+                }
+                if (count == 10){
+                  window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+                  reset();
+                }
+              } else {
+                reset();
+              }
+            });
+          }
+        }
+        global.konami();
+        </script>
+        <script>
+          /*window.onscroll = function() {myFunction()};
+
+          var navbar = document.get("navbar");
+          console.log(navbar);
+          var sticky = navbar.offsetTop;
+
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }*/
+        </script>
+    </head>
+    <body class="grey lighten-3">
+        <header>
+            <div class="grey darken-3">
+                <h2 class="yellow-text center-align animNom">Gaël SORIN</h2>
+                <div class="">
+                    <h5 class="white-text center-align animTitre">Développeur</h5><br>
+                </div>
+                  
+            </div>
+        </header>
+        <main>
+          <nav class="grey darken-2 sticky" >
+            <ul>
+              <li><a href="#Competence" class="yellow-text grey darken-2 hoverable">Compétences</a></li>
+              <li><a href="#Langues" class="yellow-text grey darken-2 hoverable">Langues</a></li>
+              <li><a href="#Experiences" class="yellow-text grey darken-2 hoverable">Éxperiences</a></li>
+              <li><a href="#Etudes" class="yellow-text grey darken-2 hoverable">Études</a></li>
+              <li><a href="#CV" class="yellow-text grey darken-2 hoverable">CV</a></li>
+              <li><a href="#Contact" class="yellow-text grey darken-2 hoverable">Contact</a></li>
+            </ul>
+          </nav>
+            <div class="row white">
+                <div class="col s12 m12 l12 z-depth-1" id="Resume">
+                    <h4 class="center-align">Résumé</h4>
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="ressources/moi.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                        </div>
+                        <div class="col s10">
+                            <p class="textResume center-align">Ma curiosité pour l'informatique est apparue très vite lorsque j'étais petit, j'adorais fouiller les paramètres des ordinateurs, consoles, téléphones... 
+                                Cette curiosité m'a emmené vers le chemin du développeur. J'ai commencé à apprendre la programmation et les systèmes électroniques durant mon BAC STI2D option SIN à St'Gab. 
+                                Après le bac j'ai continué sur un BTS SIO option SLAM, à l'Esupec, où j'ai pu apprendre à développer des sites web, développer des logiciels en Java, développer des bases de données en SQL. J'ai également pu apprendre comment travailler un projet en groupe.
+                                Durant mon BTS SIO j'ai fait 2 stages un à Ateris informatique, durant ma première année, où j'ai du développer, sur androidTV, un menu pour sélectionner des chaînes de télé et un guide TV.
+                                Durant la deuxième année j'ai fait mon stage à Apinet, fournisseur de réseau internet par ondes radio, où j'ai du développer l'espace client de celui-ci.
+                                Après mon BTS , j'ai suivi mes études sur une licence professionelle MIAR à l'iut de Nantes en faisant une alternance à la Carsat des Pays de la loire,
+                                j'ai revu les mêmes technologies mais avec des connaissances plus approfondies. Durant mon alternance à la Carsat des Pays de la Loire j'ai appris à développer avec l'environnement d'Office 365.
+                                J'ai effectué des missions régionales et nationales. Aujourd'hui je suis en pré msc-pro à Epitech de Nantes , classe préparatoire à la formation msc-pro. J'ai également des lobbies comme la création de jeux vidéos ou le vidéo montage.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l6" id="Competence">
+                    <div class="card grey darken-2 divAnimation1 tablePadding">
+                        <h4 class="center-align yellow-text titlePadding">Compétences</h4>
+                        <table>
+                            <thead>
+                              <tr>
+                                  <th class="yellow-text">Compétence</th>
+                                  <th class="yellow-text">Niveau</th>
+                              </tr>
+                            </thead>
+                    
+                            <tbody>
+                              <tr>
+                                <td class="white-text">HTML</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">CSS</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">JavaScript</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">PHP</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">SQL</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Java</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Kotlin</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Android Studio</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Go</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">React</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">VueJs</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Bootstrap</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Materialize</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Cordova</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Symfony</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Git</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">SharePoint Online</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">PowerApps</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">PowerAutomate</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">SharePoint Framework</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Linux</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Unreal Engine</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Sony Vegas Pro</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text">Davinci Resolve</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col s12 m6 l6" id="Langues">
+                    <div class="card grey darken-2 divAnimation2 tablePadding">
+                        <h4 class="center-align yellow-text titlePadding">Langues</h4>
+                        <table class="tablePadding">
+                            <thead>
+                              <tr>
+                                  <th class="yellow-text">Langue</th>
+                                  <th class="yellow-text">Niveau</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/flag-fr.png alt="drapeau Anglais" class="imgFlag"> Français</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/flag-gb.png alt="drapeau Anglais" class="imgFlag"> Anglais</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/flag-de.png alt="drapeau Allemand" class="imgFlag"> Allemand</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/flag-ru.png alt="drapeau Russe" class="imgFlag"> Russe</td>
+                                <td>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6" id="Experiences">
+                    <div class="card grey darken-2 divAnimation3 tablePadding">
+                        <h4 class="center-align yellow-text titlePadding">Expériences</h4>
+                        <table>
+                            <thead>
+                              <tr>
+                                  <th class="yellow-text">Entreprise</th>
+                                  <th class="yellow-text">Missions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/carsat.jpg alt="Carsat des Pays de la Loire" class="imgBorder"></td>
+                                <td class="white-text">Développement de sites et leurs formulaire sur l'intranet de l'entreprise, rédaction de documentations pour partager les connaissances.</td>
+                              </tr>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/ApiNet.png alt="Apinet" class="imgBorder"></td>
+                                <td class="white-text">Développement de la page login, accueil et contrat de l'espace client d'Apinet sur navigateur.</td>
+                              </tr>  
+                              <tr>
+                                <td class="white-text"><img src=./ressources/ateris.png alt="Ateris informatique" class="imgBorder"></td>
+                                <td class="white-text">Développement d'un menu TV , affichant toutes les chaînes et développement d'un guide TV affichant tous les programmes à venir.</td>
+                              </tr> 
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6" id="Etudes">
+                    <div class="card grey darken-2 divAnimation4 tablePadding">
+                        <h4 class="center-align yellow-text titlePadding">Études</h4>
+                        <table>
+                            <thead>
+                              <tr>
+                                  <th class="yellow-text">École</th>
+                                  <th class="yellow-text">Fillière</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="white-text"><img src=./ressources/Epitech.png alt="Epitech" class="imgBorder"></td>
+                                    <td class="white-text"><b>2021-2024 :</b> Pré MSC-Pro, classe préparatoire à la formation MSC-Pro, à Epitech Nantes. </td>
+                                  </tr>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/iutNantes.jpg alt="IUTNantes" class="imgBorder"></td>
+                                <td class="white-text"><b>2020-2021 :</b> Licence professionelle MIAR (Métiers de l'informatique Applications Réparties), à l'IUT de Nantes.</td>
+                              </tr>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/ESUPEC.png alt="Esupec" class="imgBorder"></td>
+                                <td class="white-text"><b>2018-2020 :</b> BTS SIO (Service Informatique aux Organisation) option SLAM (Solution Logiecielle et Aplication Métier), à ESUPEC à Cholet.</td>
+                              </tr>
+                              <tr>
+                                <td class="white-text"><img src=./ressources/stGab.png alt="StGab" class="imgBorder"></td>
+                                <td class="white-text"><b>2016-2018 :</b> BAC STI2D (Sciences Technologiques Industrielles du développement durable) option SIN (Système Informatique Numérique), à St'Gab à St Laurent sur Sèvre.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row white z-depth-1 divCV grey darken-2 yellow-text">
+              <div class="s12">
+                <h4 class="center-align titlePadding" id="CV">CV</h4>
+                <embed src="ressources/cv.pdf" type="application/pdf" class="embed" />
+              </div>
+            </div>
+            <div class="row white z-depth-1 divContact">
+                <h4 class="center-align" id="Contact">Contactez moi</h4>
+                <div class="card-action center-align">
+                    <span>gaelmsorin@gmail.com</span><br>
+                    <a href="https://github.com/GaelSorin">GitHub</a><br>
+                    <a href="https://www.linkedin.com/in/ga%C3%ABl-sorin-a55778213/">Linkedin</a>
+                </div>
+            </div>
+        </main>
+        <footer class="grey darken-3">
+            <p class="center-align yellow-text">Copyright © Gaël SORIN 2021 - Cheat Code avialable in this website</p>
+        </footer>
+    </body>
+</html>
+
