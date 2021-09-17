@@ -46,21 +46,6 @@
         }
         global.konami();
         </script>
-        <script>
-          /*window.onscroll = function() {myFunction()};
-
-          var navbar = document.get("navbar");
-          console.log(navbar);
-          var sticky = navbar.offsetTop;
-
-          function myFunction() {
-            if (window.pageYOffset >= sticky) {
-              navbar.classList.add("sticky")
-            } else {
-              navbar.classList.remove("sticky");
-            }
-          }*/
-        </script>
     </head>
     <body class="grey lighten-3">
         <header>
@@ -491,6 +476,35 @@
                     <a href="https://github.com/GaelSorin">GitHub</a><br>
                     <a href="https://www.linkedin.com/in/ga%C3%ABl-sorin-a55778213/">Linkedin</a>
                 </div>
+                <form class="col s12">
+                  <div class="row">
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Prénom</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Nom</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12">
+                          <i class="material-icons prefix">message</i>
+                          <textarea placeholder="Votre message" id="your_message" class="materialize-textarea"></textarea>
+                      </div>
+                  </div>
+                  <button class="btn waves-effect waves-light yellow black-text" type="submit" name="action">Envoyer
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </form>
             </div>
         </main>
         <footer class="grey darken-3">
